@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:languagelearningappversion2/screens/splashscreen.dart';
+import 'package:languagelearningappversion2/screens/splash_screen.dart';
 
 void main() {
   runApp(TokuApp());

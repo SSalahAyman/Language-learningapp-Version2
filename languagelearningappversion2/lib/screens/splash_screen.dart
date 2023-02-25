@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:get/get.dart';
-import 'package:languagelearningappversion2/screens/homepage.dart';
+import 'package:languagelearningappversion2/screens/home_page.dart';
 
 import 'package:lottie/lottie.dart';
 
