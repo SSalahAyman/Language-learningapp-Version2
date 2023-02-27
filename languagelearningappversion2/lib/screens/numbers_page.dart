@@ -98,10 +98,17 @@ class NumbersPage extends StatelessWidget {
           itemCount: numbers.length,
           itemBuilder: (BuildContext context, Index) {
             return ListItem(
+              itemtype: "numbers",
               bgImage: "numbers_category",
               item: numbers[Index],
             );
           },
+          // separatorBuilder: (context, index) {
+          //   return Divider(
+          //     color: Colors.grey,
+          //     thickness: 3,
+          //   );
+          // },
         ),
       ),
     );

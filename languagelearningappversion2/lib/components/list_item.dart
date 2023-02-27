@@ -5,8 +5,13 @@ class ListItem extends StatelessWidget {
   static late double width;
   static late double height;
   String bgImage;
+  String itemtype;
   Item item;
-  ListItem({super.key, required this.bgImage, required this.item});
+  ListItem(
+      {super.key,
+      required this.bgImage,
+      required this.item,
+      required this.itemtype});
 
   @override
   Widget build(BuildContext context) {
@@ -36,10 +41,12 @@ class ListItem extends StatelessWidget {
             child: Container(
               width: width * 0.25,
               height: height * 0.111,
-              child: Image.asset("assets/images/numbers/${item.imageItem}.png"),
+              child:
+                  Image.asset("assets/images/$itemtype/${item.imageItem}.png"),
             ),
           ),
           Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Padding(

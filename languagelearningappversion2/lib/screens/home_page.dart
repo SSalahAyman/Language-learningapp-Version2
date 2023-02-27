@@ -58,7 +58,7 @@ class HomePage extends StatelessWidget {
               */
                 Category(
                     background: "family_members_category",
-                    text: "family members",
+                    text: "Family members",
                     icon: "family_members",
                     ontap: () {
                       Navigator.push(context, MaterialPageRoute(
@@ -72,7 +72,7 @@ class HomePage extends StatelessWidget {
               */
                 Category(
                     background: "colors_category",
-                    text: "colors",
+                    text: "Colors",
                     icon: "colors",
                     ontap: () {
                       Navigator.push(context, MaterialPageRoute(
