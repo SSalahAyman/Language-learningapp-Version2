@@ -8,45 +8,45 @@ class ColorsPage extends StatelessWidget {
   static late double height;
   final List<Item> colors = const [
     Item(
-      imageItem: "color_black",
-      jpName: 'Kuro',
-      enName: 'black',
-    ),
+        imageItem: "color_black",
+        jpName: 'Burakku',
+        enName: 'black',
+        sound: "sounds/colors/black.wav"),
     Item(
-      imageItem: "color_brown",
-      jpName: 'Chairo',
-      enName: 'brown',
-    ),
+        imageItem: "color_brown",
+        jpName: 'Chairo',
+        enName: 'brown',
+        sound: "sounds/colors/brown.wav"),
     Item(
-      imageItem: "color_dusty_yellow",
-      jpName: 'Hokori ppoi kiiro',
-      enName: 'dusty yellow',
-    ),
+        imageItem: "color_dusty_yellow",
+        jpName: 'Hokori ppoi kiiro',
+        enName: 'dusty yellow',
+        sound: "sounds/colors/dusty_yellow.wav"),
     Item(
-      imageItem: "color_gray",
-      jpName: 'Gurē',
-      enName: 'gray',
-    ),
+        imageItem: "color_gray",
+        jpName: 'Gurē',
+        enName: 'gray',
+        sound: "sounds/colors/gray.wav"),
     Item(
-      imageItem: "color_green",
-      jpName: 'Midori',
-      enName: 'green',
-    ),
+        imageItem: "color_green",
+        jpName: 'Midori',
+        enName: 'green',
+        sound: "sounds/colors/green.wav"),
     Item(
-      imageItem: "color_red",
-      jpName: 'Aka',
-      enName: 'red',
-    ),
+        imageItem: "color_red",
+        jpName: 'Aka',
+        enName: 'red',
+        sound: "sounds/colors/red.wav"),
     Item(
-      imageItem: "color_white",
-      jpName: 'Shiroi',
-      enName: 'white',
-    ),
+        imageItem: "color_white",
+        jpName: 'Shiroi',
+        enName: 'white',
+        sound: "sounds/colors/white.wav"),
     Item(
-      imageItem: "yellow",
-      jpName: 'Kiiro',
-      enName: 'yellow',
-    ),
+        imageItem: "yellow",
+        jpName: 'Kiiro',
+        enName: 'yellow',
+        sound: "sounds/colors/yellow.wav"),
   ];
   @override
   Widget build(BuildContext context) {
@@ -67,9 +67,12 @@ class ColorsPage extends StatelessWidget {
                 style: TextStyle(fontSize: 25, fontFamily: 'pacifico'),
               ),
             ),
-            Image.asset(
-              "assets/icons/colors.png",
-              width: width * 0.1,
+            Hero(
+              tag: "colors",
+              child: Image.asset(
+                "assets/icons/colors.png",
+                width: width * 0.1,
+              ),
             )
           ],
         ),

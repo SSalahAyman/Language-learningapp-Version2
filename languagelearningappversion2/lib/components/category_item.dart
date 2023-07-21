@@ -6,17 +6,16 @@ class Category extends StatelessWidget {
   String background;
   String text;
   String icon;
-  // String tag;
+  String tag;
   VoidCallback ontap;
 
-  Category({
-    super.key,
-    required this.background,
-    required this.text,
-    required this.icon,
-    required this.ontap,
-    // required this.tag
-  });
+  Category(
+      {super.key,
+      required this.background,
+      required this.text,
+      required this.icon,
+      required this.ontap,
+      required this.tag});
 
   @override
   Widget build(BuildContext context) {
@@ -44,10 +43,13 @@ class Category extends StatelessWidget {
             SizedBox(
               width: width * 0.04,
             ),
-            Image.asset(
-              "assets/icons/$icon.png",
-              width: width * 0.12,
-              height: height * 0.12,
+            Hero(
+              tag: tag,
+              child: Image.asset(
+                "assets/icons/$icon.png",
+                width: width * 0.12,
+                height: height * 0.12,
+              ),
             ),
           ],
         ),

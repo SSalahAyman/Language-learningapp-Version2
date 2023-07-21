@@ -1,3 +1,4 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:languagelearningappversion2/models/item.dart';
 
@@ -71,7 +72,10 @@ class ListItem extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(right: width * 0.01),
             child: IconButton(
-              onPressed: () {},
+              onPressed: () async {
+                final player = AudioPlayer();
+                await player.play(AssetSource(item.sound!));
+              },
               icon: Icon(
                 Icons.play_circle_filled_outlined,
                 color: Colors.grey.withOpacity(0.6),

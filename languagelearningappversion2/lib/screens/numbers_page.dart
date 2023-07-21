@@ -9,55 +9,55 @@ class NumbersPage extends StatelessWidget {
   const NumbersPage({super.key});
   final List<Item> numbers = const [
     Item(
-      enName: "one",
-      jpName: "ichi",
-      imageItem: "number_one",
-    ),
+        enName: "one",
+        jpName: "ichi",
+        imageItem: "number_one",
+        sound: "sounds/numbers/number_one_sound.mp3"),
     Item(
-      enName: "two",
-      jpName: "ichi",
-      imageItem: "number_two",
-    ),
+        enName: "two",
+        jpName: "Ni",
+        imageItem: "number_two",
+        sound: "sounds/numbers/number_two_sound.mp3"),
     Item(
-      enName: "three",
-      jpName: "ichi",
-      imageItem: "number_three",
-    ),
+        enName: "three",
+        jpName: "San",
+        imageItem: "number_three",
+        sound: "sounds/numbers/number_three_sound.mp3"),
     Item(
-      enName: "four",
-      jpName: "ichi",
-      imageItem: "number_four",
-    ),
+        enName: "four",
+        jpName: "Shi",
+        imageItem: "number_four",
+        sound: "sounds/numbers/number_four_sound.mp3"),
     Item(
-      enName: "five",
-      jpName: "ichi",
-      imageItem: "number_five",
-    ),
+        enName: "five",
+        jpName: "Go",
+        imageItem: "number_five",
+        sound: "sounds/numbers/number_five_sound.mp3"),
     Item(
-      enName: "six",
-      jpName: "ichi",
-      imageItem: "number_six",
-    ),
+        enName: "six",
+        jpName: "Roku",
+        imageItem: "number_six",
+        sound: "sounds/numbers/number_six_sound.mp3"),
     Item(
-      enName: "seven",
-      jpName: "ichi",
-      imageItem: "number_seven",
-    ),
+        enName: "seven",
+        jpName: "Sebun",
+        imageItem: "number_seven",
+        sound: "sounds/numbers/number_seven_sound.mp3"),
     Item(
-      enName: "eight",
-      jpName: "ichi",
-      imageItem: "number_eight",
-    ),
+        enName: "eight",
+        jpName: "Hachi",
+        imageItem: "number_eight",
+        sound: "sounds/numbers/number_eight_sound.mp3"),
     Item(
-      enName: "nine",
-      jpName: "ichi",
-      imageItem: "number_nine",
-    ),
+        enName: "nine",
+        jpName: "Kyū",
+        imageItem: "number_nine",
+        sound: "sounds/numbers/number_nine_sound.mp3"),
     Item(
-      enName: "ten",
-      jpName: "ichi",
-      imageItem: "number_ten",
-    )
+        enName: "ten",
+        jpName: "Jū",
+        imageItem: "number_ten",
+        sound: "sounds/numbers/number_ten_sound.mp3")
   ];
 
   @override
@@ -79,9 +79,12 @@ class NumbersPage extends StatelessWidget {
                 style: TextStyle(fontSize: 25, fontFamily: 'pacifico'),
               ),
             ),
-            Image.asset(
-              "assets/icons/numbers.png",
-              width: width * 0.1,
+            Hero(
+              tag: "numbers",
+              child: Image.asset(
+                "assets/icons/numbers.png",
+                width: width * 0.1,
+              ),
             )
           ],
         ),

@@ -46,6 +46,7 @@ class HomePage extends StatelessWidget {
                     background: "numbers_category",
                     text: "numbers",
                     icon: "numbers",
+                    tag: "numbers",
                     ontap: () {
                       Navigator.push(context, MaterialPageRoute(
                         builder: (BuildContext context) {
@@ -54,12 +55,13 @@ class HomePage extends StatelessWidget {
                       ));
                     }),
                 /*
-              Second category (numbers)
+              Second category (family members)
               */
                 Category(
                     background: "family_members_category",
                     text: "Family members",
                     icon: "family_members",
+                    tag: "family members",
                     ontap: () {
                       Navigator.push(context, MaterialPageRoute(
                         builder: (BuildContext context) {
@@ -68,12 +70,13 @@ class HomePage extends StatelessWidget {
                       ));
                     }),
                 /*
-              third category (numbers)
+              third category (colors)
               */
                 Category(
                     background: "colors_category",
                     text: "Colors",
                     icon: "colors",
+                    tag: "colors",
                     ontap: () {
                       Navigator.push(context, MaterialPageRoute(
                         builder: (BuildContext context) {
@@ -82,12 +85,13 @@ class HomePage extends StatelessWidget {
                       ));
                     }),
                 /*
-              fourth category (numbers)
+              fourth category (phrases)
               */
                 Category(
                     background: "phrases_category",
                     text: "Phrases",
                     icon: "phrases",
+                    tag: "phrases",
                     ontap: () {
                       Navigator.push(context, MaterialPageRoute(
                         builder: (BuildContext context) {
