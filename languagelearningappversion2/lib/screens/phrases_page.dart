@@ -11,36 +11,40 @@ class PhrasesPage extends StatelessWidget {
     Item(
         enName: 'dont forget to subscribe',
         jpName: 'Kōdoku suru koto o ',
-        sound: ""),
+        sound: "sounds/phrases/dont_forget_to_subscribe.wav"),
     Item(
         enName: 'i love  programming',
         jpName: 'Puroguramingu wa kantandesu ',
-        sound: ""),
+        sound: "sounds/phrases/i_love_programming.wav"),
     Item(
         enName: 'where are you going',
         jpName: 'Kōdoku suru koto o ',
-        sound: ""),
+        sound: "sounds/phrases/where_are_you_going.wav"),
     Item(
         enName: 'dont forget to subscribe',
         jpName: 'Doko ni iku no ',
-        sound: ""),
+        sound: "sounds/phrases/dont_forget_to_subscribe.wav"),
     Item(
         enName: 'what is your name ?',
         jpName: 'Namae wa nandesu ka ',
-        sound: ""),
+        sound: "sounds/phrases/what_is_your_name.wav"),
     Item(
         enName: 'i love anime',
         jpName: 'Watashi wa anime ga daisukidesu ',
-        sound: ""),
+        sound: "sounds/phrases/i_love_anime.wav"),
     Item(
         enName: 'how are you feeling?',
         jpName: 'Go kibun wa ikagadesu ka ',
-        sound: ""),
-    Item(enName: 'are you coming?', jpName: 'Kimasu ka ', sound: ""),
+        sound: "sounds/phrases/how_are_you_feeling.wav"),
+    Item(
+      enName: 'are you coming?',
+      jpName: 'Kimasu ka ',
+      sound: "sounds/phrases/are_you_coming.wav",
+    ),
     Item(
         enName: 'yes i am coming',
         jpName: 'Hai watashi wa kite imasu',
-        sound: ""),
+        sound: "sounds/phrases/yes_im_coming.wav"),
   ];
   @override
   Widget build(BuildContext context) {

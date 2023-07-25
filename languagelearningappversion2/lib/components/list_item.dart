@@ -20,7 +20,7 @@ class ListItem extends StatelessWidget {
     height = MediaQuery.of(context).size.height;
     /**
      * check on the object item that has his data that come from any screen , and checks in imageItem if its null that has no value because it is 
-     * not required So return the container without image and if it is not null return with imagItem
+     * not required So return the container without image and if it is not null return with imagItem / and all of this checks I used the ternary operator
      */
     return item.imageItem == null
         ? Container(
